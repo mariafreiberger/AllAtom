@@ -29,11 +29,11 @@ mkdir='mkdir '+sys.argv[1]+'.done/FrustratioData'
 os.system(mkdir)
 
 
-#--------Runing FrustraAllAtom
+#--------Runing FrustraAllAtom------
 job_frustra='cd '+sys.argv[1]+'.done;./job.sh '+sys.argv[1]+' '+sys.argv[2]
 os.system(job_frustra)
 
-
+#--- Moving files-----
 
 mv='cd '+sys.argv[1]+'.done;mv *.log* Decoys/'
 os.system(mv)
@@ -42,6 +42,8 @@ os.system(mv)
 mv='cd '+sys.argv[1]+'.done;mv *.dat* FrustratioData/'
 os.system(mv)
 mv='cd '+sys.argv[1]+'.done;mv tertiary_frustration.pml VisualizationScript/tertiary_frustration.pml'
+os.system(mv)
+mv='cd '+sys.argv[1]+'.done;mv tertiary_frustration.tcl VisualizationScript/tertiary_frustration.tcl'
 os.system(mv)
 cp='cp '+sys.argv[1]+'.done/Decoys/'+sys.argv[1]+' '+sys.argv[1]+'.done/VisualizationScript/'+sys.argv[1]
 os.system(cp)
