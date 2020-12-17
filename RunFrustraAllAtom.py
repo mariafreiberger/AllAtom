@@ -44,7 +44,7 @@ os.system(mv)
 mv='cd '+sys.argv[1]+'.done;mv tertiary_frustration.pml VisualizationScript/tertiary_frustration.pml'
 os.system(mv)
 cp='cp '+sys.argv[1]+'.done/Decoys/'+sys.argv[1]+' '+sys.argv[1]+'.done/VisualizationScript/'+sys.argv[1]
-os.system(mv)
+os.system(cp)
 
 out=open(sys.argv[1]+'.done/VisualizationScript/tertiary_frustration.pml','r+')
 out.write('load '+sys.argv[1]+'\n')
