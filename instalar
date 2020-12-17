@@ -1,0 +1,10 @@
+Pasos para instalar el all-atom
+1) descargar del github
+2) Descargar de rosetta con licencia academica "Rosetta Software Suite" (https://www.rosettacommons.org/software/license-and-download) la version que pesa 6gb
+3) Instalar Rosetta: https://www.youtube.com/watch?v=UEaFmUMEL9c&ab_channel=SariSabban
+4) Modifique un archivo en el job.sh
+	1) el directorio en donde se encuentra rosetta, en mi caso /home/maria/Rosetta
+	2) modifique rosetta_scripts.static.linuxgccrelease por rosetta_scripts.linuxgccrelease
+	3) modifique python Frust_Post_public.py 100 -2.5 0.5 $2 9 0 Function1 -1.5 0.5 por python3 Frust_Post_public.py 100 -2.5 0.5 $2 9 0 Function1 -1.5 0.5
+5) en el archivo Frust_Post_public.py modifique import scipy.io por import scipy, no me reconocia la libreria y todos los print los puse entre ()
+
