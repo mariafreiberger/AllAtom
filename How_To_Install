@@ -1,0 +1,19 @@
+Steps to install all-atom
+1) download from github (https://github.com/Mingchenchen/AtomicFrustratometer_Results/tree/master/src)
+	1) dependencies to install:
+		Python libraries (it is adapted to python 3, so install everything in python3) numpy, scipy, matplotlib;
+		Pymol (not required to run for visualization only, easier than VMD);
+		VMD (not required to run for visualization only); 
+		Biopython;
+2) Download from Rosetta the academically licensed "Rosetta Software Suite" (https://www.rosettacommons.org/software/license-and-download) the 6gb version.
+3) Install Rosetta: https://www.youtube.com/watch?v=UEaFmUMEL9c&ab_channel=SariSabban
+4) Modify one file in job.sh
+	1) the directory where rosetta is located, in my case /home/maria/Rosetta
+	2) modify rosetta_scripts.static.linuxgccrelease to rosetta_scripts.linuxgccrelease
+	3) modify python Frust_Post_public.py 100 -2.5 0.5 $2 9 0 Function1 -1.5 0.5 by python3 Frust_Post_public.py 100 -2.5 0.5 $2 9 0 Function1 -1.5 0.5
+5) In the file Frust_Post_public.py I modified import scipy.io by import scipy, it didn't recognize the library and all the print I put them between ()
+6) Once everything is installed, I recommend, create a folder called RunAllAtom and there download the files from this github
+7) In the RunAllAtom folder give executable permissions to the job.sh (chmod +x job.sh)
+8) To run it for example for the structure 1QYS.pdb with 50 decoys: python RunFrustraAllAtom.py 1QYS.pdb 50
+
+Translated with www.DeepL.com/Translator (free version)
