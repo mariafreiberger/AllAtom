@@ -1,5 +1,5 @@
 Pasos para instalar el all-atom
-1) descargar del github (https://github.com/Mingchenchen/AtomicFrustratometer_Results/tree/master/src)
+1) descargar del github (https://github.com/Mingchenchen/AtomicFrustratometer_Results)
 	1) dependencias para instalar:
 		Librerias de python (esta adaptado a python 3, asi que instalar todo en python3) numpy, scipy, matplotlib;
 		Pymol (no es necesaria para que corra solo para visualizar, es mas facil que VMD);
