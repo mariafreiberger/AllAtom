@@ -28,10 +28,13 @@ os.system(cp)
 mkdir='mkdir '+sys.argv[1]+'.done/FrustratioData'
 os.system(mkdir)
 
+os.system('python genera_xml.py '+sys.argv[1]+' '+sys.argv[3]+' '+sys.argv[4])
+
 
 #--------Runing FrustraAllAtom------
 job_frustra='cd '+sys.argv[1]+'.done;./job.sh '+sys.argv[1]+' '+sys.argv[2]
 os.system(job_frustra)
+os.system('cd '+sys.argv[1]+'.done;chmod +x job.sh')
 
 #--- Moving files-----
 
