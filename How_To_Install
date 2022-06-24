@@ -14,4 +14,3 @@ Steps to install all-atom
 7) In the RunAllAtom folder give executable permissions to the job.sh (chmod +x job.sh)
 8) To run it, python RunFrustraAllAtom.py PDBID.pdb N_decoys star_pdb end_pdb for example for the structure 1QYS.pdb with 50 decoys: python RunFrustraAllAtom.py 1QYS.pdb 50 1 92
 
-Translated with www.DeepL.com/Translator (free version)
